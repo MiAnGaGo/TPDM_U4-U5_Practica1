@@ -43,11 +43,15 @@ class Lienzo(p: MainActivity) : View(p) {
 
     override fun onDraw(c: Canvas) {
         super.onDraw(c)
-        var p = Paint()
 
         if (puntero.distancia == 0f){
-            Toast.makeText(puntero,"ocultar",Toast.LENGTH_SHORT).show()
-            c.restore()
+            //picono == null
+            fb_color.invisible == false
+            insta_color.invisible == false
+            twitter_color.invisible == false
+            whats_color.invisible == false
+            youtube_color.invisible == false
+            invalidate()
         }else{
             when (puntero.contShake){
                 0 -> {

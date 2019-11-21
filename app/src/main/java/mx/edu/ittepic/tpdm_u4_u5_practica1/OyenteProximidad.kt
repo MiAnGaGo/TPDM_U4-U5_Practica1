@@ -13,8 +13,5 @@ class OyenteProximidad (p : MainActivity) : SensorEventListener {
 
     override fun onSensorChanged(p0: SensorEvent?) {
         puntero.distancia = p0!!.values[0]
-        if (p0!!.values[0] == 0f){
-            Toast.makeText(puntero,"distancia ${p0!!.values[0]}",Toast.LENGTH_SHORT).show()
-        }
     }
 }

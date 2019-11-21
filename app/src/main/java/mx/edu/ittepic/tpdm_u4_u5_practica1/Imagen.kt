@@ -8,9 +8,12 @@ class Imagen(l: Lienzo,posx : Float, posy : Float, im : Int){
     var x = posx
     var y = posy
     var imagen = BitmapFactory.decodeResource(l.resources,im)
+    var invisible = false
 
     fun pintar(c : Canvas){
-        c.drawBitmap(imagen, x, y, Paint())
+        if (invisible == false) {
+            c.drawBitmap(imagen, x, y, Paint())
+        }
     }
 
     fun estaEnArea(toqueX : Float, toqueY : Float) : Boolean{
