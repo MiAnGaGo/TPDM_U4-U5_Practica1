@@ -18,23 +18,23 @@ class Lienzo(p: MainActivity) : View(p) {
     var whats_color = Imagen(this, 1822f, 300f, R.drawable.whats_color)
     var youtube_color = Imagen(this, 2544f, 300f, R.drawable.youtube_color)
     //ICONOS B/N
-    var fb_bn = Imagen(this, -344f, 0f, R.drawable.fb_bn)
-    var insta_bn = Imagen(this, 378f, 0f, R.drawable.insta_bn)
-    var twitter_bn = Imagen(this, 1100f, 0f, R.drawable.twitter_bn)
-    var whats_bn = Imagen(this, 1822f, 0f, R.drawable.whats_bn)
-    var youtube_bn = Imagen(this, 2544f, 0f, R.drawable.youtube_bn)
+    var fb_bn = Imagen(this, -344f, 300f, R.drawable.fb_bn)
+    var insta_bn = Imagen(this, 378f, 300f, R.drawable.insta_bn)
+    var twitter_bn = Imagen(this, 1100f, 300f, R.drawable.twitter_bn)
+    var whats_bn = Imagen(this, 1822f, 300f, R.drawable.whats_bn)
+    var youtube_bn = Imagen(this, 2544f, 300f, R.drawable.youtube_bn)
     //ICONOS VINTAGE
-    var fb_vintage = Imagen(this, -344f, 0f, R.drawable.fb_vinta)
-    var insta_vintage = Imagen(this, 378f, 0f, R.drawable.insta_vinta)
-    var twitter_vintage = Imagen(this, 1100f, 0f, R.drawable.twitter_vinta)
-    var whats_vintage = Imagen(this, 1822f, 0f, R.drawable.whats_vinta)
-    var youtube_vintage = Imagen(this, 2544f, 0f, R.drawable.youtube_vinta)
+    var fb_vintage = Imagen(this, -344f, 300f, R.drawable.fb_vinta)
+    var insta_vintage = Imagen(this, 378f, 300f, R.drawable.insta_vinta)
+    var twitter_vintage = Imagen(this, 1100f, 300f, R.drawable.twitter_vinta)
+    var whats_vintage = Imagen(this, 1822f, 300f, R.drawable.whats_vinta)
+    var youtube_vintage = Imagen(this, 2544f, 300f, R.drawable.youtube_vinta)
     //ICONOS ANTIGUO
-    var fb_antiguo = Imagen(this, -344f, 0f, R.drawable.fb_antiguo)
-    var insta_antiguo = Imagen(this, 378f, 0f, R.drawable.insta_antiguo)
-    var twitter_antiguo = Imagen(this, 1100f, 0f, R.drawable.twitter_antiguo)
-    var whats_antiguo = Imagen(this, 1822f, 0f, R.drawable.whats_antiguo)
-    var youtube_antiguo = Imagen(this, 2544f, 0f, R.drawable.youtube_antiguo)
+    var fb_antiguo = Imagen(this, -344f, 300f, R.drawable.fb_antiguo)
+    var insta_antiguo = Imagen(this, 378f, 300f, R.drawable.insta_antiguo)
+    var twitter_antiguo = Imagen(this, 1100f, 300f, R.drawable.twitter_antiguo)
+    var whats_antiguo = Imagen(this, 1822f, 300f, R.drawable.whats_antiguo)
+    var youtube_antiguo = Imagen(this, 2544f, 300f, R.drawable.youtube_antiguo)
     //Arreglo categorizando las imagenes
     var arrColor = arrayListOf<Imagen>(fb_color,insta_color,twitter_color,whats_color,youtube_color)
     var arrBn = arrayListOf<Imagen>(fb_bn,insta_bn,twitter_bn,whats_bn,youtube_bn)
@@ -45,7 +45,6 @@ class Lienzo(p: MainActivity) : View(p) {
         super.onDraw(c)
 
         if (puntero.distancia == 0f){
-            //picono == null
             fb_color.invisible == false
             insta_color.invisible == false
             twitter_color.invisible == false
